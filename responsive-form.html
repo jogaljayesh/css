@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Registration Form</title>
+
+  <style type="text/css">
+    
+*{
+  padding: 0;
+  margin: 500;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+body{
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #8d559e;
+  opacity: 0.8;
+  background-image: radial-gradient(circle at center center,    #f74590, #8d559e), repeating-radial-gradient(circle at    center center, #f74590, #f74590, 27px, transparent 54px,    transparent 27px);
+
+background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.container{
+    width: 120%;
+    max-width: 750px;
+    background: rgba(0, 10, 0, 0.2);
+    padding: 26px;
+    margin: 0 0px;
+    border-radius: 100px;
+    box-shadow: 
+}
+
+.form-title{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+    font-family: 'Courier New', monospace;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    padding-bottom: 20px;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: #F94C10;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 5px 0;
+}
+
+.user-input-box input{
+    height: 45px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 5px solid black;
+    padding: 0 10px;
+}
+
+.gender-title{
+  
+    color:#F94C10;
+    font-size: 25px;
+    font-weight: 800px;
+    border-bottom: 1px F94C10;
+}
+
+.gender-category{
+    margin: 10px 0;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input {
+  display: block;
+  width: 200px;
+  height: 55px;
+  font-size: 22px;
+  font-family: "Helvetica Neue", 'Courier New', monospace;
+  color: #fff;
+  background: #9473AD;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+.form-submit-btn input:hover {
+  background: #448cbe;
+}
+
+.form-submit-btn input:active {
+  transform: scale(1.05);
+}
+
+.form-submit-btn input:hover{
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    color: rgb(19, 255, 70);
+}
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+  </style>
+
+</head>
+<body>
+    <div class="container">
+      <h1 class="form-title">registration</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Username</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Username"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Phone Number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm Password"/>
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
