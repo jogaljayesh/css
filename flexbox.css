@@ -1,0 +1,42 @@
+/* --- contenedores generales --- */
+.contenedor {
+    background-color: DarkSalmon;
+    padding: 10px;
+    margin:10px;
+    width: 80%;
+    height: 300px;
+  }
+  
+  .box{
+    background-color: Bisque;
+    border: 2px solid brown;
+    padding: 10px;
+    width: 30%;
+    height:20%;
+  }
+  
+  /* --- situación flex --- */
+  .ejemplo-flex{
+    display: flex; 
+    justify-content:center; /* alineación horizontal */
+    align-items: center; /* alineación vertical*/
+    gap: 10px; /*separación entre elementos internos*/
+  }
+  
+  
+  /* --------------------------- */
+  
+  /*  --- GENERAL --- */
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  p{
+    text-align:center;
+    color: brown;
+    
+  }
