@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Happy+Monkey|Lemon);
+
+body {
+  font-family: "Happy Monkey";
+  line-height: 1.5;
+}
+
+section {
+  padding: 1em;
+}
+
+header {
+  font-family: "Lemon";
+  margin-bottom: 1em;
+}
+
+.block {
+  background: blanchedalmond;
+  div {
+    border: 1px dashed chocolate;
+  }
+}
+
+.inline-block {
+  background: mistyrose;
+  div {
+    display: inline-block;
+    border: 1px dashed firebrick;
+  }
+}
+
+.inline {
+  background: lemonchiffon;
+  div {
+    display: inline;
+    border: 1px dashed darkgreen;
+  }
+}
