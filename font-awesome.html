@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>font-awesome</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style type="text/css">
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: arial;
+}
+.wrapper {
+	margin: 0px auto;
+	width: 100%;
+}
+.main {
+	width: 100%;
+	float: left;
+	height: 100vh;
+	background-image: url("images/robert-lukeman-_RBcxo9AU-U-unsplash.jpg");
+	background-size: 100%;
+	overflow: hidden;
+}
+.nav {
+	width: 100%;
+	float: left;
+	background-color: rgb(0, 0, 0,.5);
+}
+ul {
+	list-style-type: none;
+	overflow: hidden;
+	display: block;
+	float: left;
+
+}
+li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+li:last-child {
+	border-right: none;
+}
+a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 24px 56px;
+	font-size: 24px;
+	transition: all .5s;
+}
+a:hover {
+	background-color: #a5aa05;
+	color: #333;
+	text-decoration: none;
+}
+.search{
+	float: right;
+}
+.search:hover {
+	color: white;
+}
+.search input {
+	width: 300px;
+	height: 30px;
+	margin: 20px 20px 0px 0px;
+	border-radius: 15px;
+	border: 1px solid #fff;
+	background-color: black;
+	opacity: .5;
+	padding-left: 20px;
+	color: #fff;
+	font-size: 18px;
+}
+.search i.fa-solid {
+	color: #fff;
+	font-size: 18px;
+	margin: 5px 5px 0px 0px;
+}
+.content {
+	width: 100%;
+}
+article {
+	width: 13.5%;
+	margin-left: 10%;
+	background-color: rgb(255, 255, 0,.45);
+	color: #000;
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 50px 50px 0px 50px;
+	margin-top: 400px;
+	height: 400px;
+	font-size: 18px;
+	border-radius: 40px 40px 40px 40px;
+	transition: all 0.5s;
+}
+article p, article h1 {
+	margin-top: 20px;
+}
+article:hover {
+	background-color: #fff;
+	color: #000;
+	margin-top: 200px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="main">
+		<div class="nav">
+			<ul>
+				<li><a href="#"><i class="fa-solid fa-house-user"></i>HOME</a></li>
+				<li><a href="#"><i class="fa-solid fa-newspaper"></i>NEWS</a></li>
+				<li><a href="#"><i class="fa-solid fa-address-book"></i>CONTACT</a></li>
+			</ul>
+ 			<div class="search">
+ 				<i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="search">
+ 			</div>
+
+
+		</div>
+		<div class="content">
+			<article>
+				<i><img src="images/illustration.png" style="width: 60px; height: 60px;"></i>
+				<h1>Graphic Design</h1>
+				<p>
+				Graphic Design is the process of visual communication and problem-solving through the use of typography,
+				photography, iconography and ilustraton. the field is considered a subset of visual communication and 
+				communication design, but sometime the term "graphic design" is used synonymously.
+				</p>
+			</article>
+			<article>
+				<i><img src="images/icons8-web-design-64.png" style="width: 60px; height: 60px;"></i>
+				<h1>Web Design</h1> 
+				<p>
+					Web Design encompasses many different skills and disciplines in the production and 
+					maintenance of wesites. the different areas of web graphic design; interface design;
+					authoring, including standardised code and proprietary software;
+				</p>
+			</article>
+			<article>
+				<i><img src="images/icons8-web-development-64.png" style="width: 60px; height: 60px;"></i>
+				<h1>web devloper</h1>
+				<p>
+					web design partially overlaps web engineering in the broader scope of web devlopment.
+					Web designers are expected to have an awareness of usabillity and if their role involves
+					creating markup then they are also expected to be up to date with web accessibility
+				</p>
+			</article>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>
