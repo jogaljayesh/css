@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>font-size</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Monoton&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style type="text/css">
+
+* {margin: 0; padding: 0;}
+	
+.wrapper {
+	margin: 0px auto;
+	width: 900px;
+}
+.main {
+	width: 900px;
+	float: left;
+	border-bottom: 20px solid #555;
+	padding-bottom: 10px;
+}
+img {
+	width: 900px;
+	margin: 5px 0px;
+	padding: 5px 0px;
+	border-top: 2px solid #555;
+	border-bottom: 2px solid #555;
+}
+p.first {
+	width: 880px;
+	text-align: center;
+	background-color: gray;
+	color: #fff;
+	float: left;
+	padding: 10px;
+	font-size: 24px;
+    font-family: 'Monoton', cursive;
+}
+p.second {
+	width: 600px;
+	float: left;
+	color: #555;
+	font-family: 'Permanent Marker', cursive;
+}
+p.read {
+	text-align: right;
+	width: 550px;
+	float: left;
+	color: red;
+}
+p.third {
+	width: 600px;
+	margin-top: 10px;
+	float: left;
+	color: #555;
+	font-family: 'Patrick Hand', cursive;
+}
+.form {
+	width: 260px;
+	background-color: #444;
+	padding: 20px;
+	float: right;
+	color: #fff;
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 5px;
+	border: none;
+	box-sizing: border-box;
+	margin-top: 4px;
+	margin-bottom: 14px;
+}
+textarea {
+	height: 80px;
+}
+input[type=submit] {
+	background-color: #fff;
+	color: #0275a1;
+	font-weight: bold;
+	padding: 8px 20px;
+	margin-left: 30%;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+}
+.form p {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: larger;
+}
+p.second span {
+	color: #000;
+	text-align: justify;
+	font-size: x-large;
+}
+p.third span {
+	width: 226px;
+	color: #000;
+	text-align: justify;
+	font-size: xx-large;
+}
+
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+</style>
+
+
+
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="main">
+		<p class="first">my home page</p>
+		<img src="images/3031a7b-1.png">
+
+		<p class="second">
+			<span>Graphic Design</span><br>
+			Graphic Design is the process of visual communication and problem-solving through the use of typography,
+			photography, iconography and ilustraton. the field is considered a subset of visual communication and 
+			communication design, but sometime the term "graphic design" is used synonymously. graphic designers
+			creat and combine symbols, images and text to form visual representations of ideas and messages.
+		</p>
+		
+		<div class="form">
+			<p>Enquiry</p>
+			<form>
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="first name" placeholder="your name">
+
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="last name" placeholder="your last name">
+
+				<label for="country">Country</label>]
+				<select id="country" name="country">
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="usa">USA</option>
+				</select>
+
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="write something..."></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<p class="read"><a href="https://www.w3schools.com/html/" target="_blank">Read More.....</a></p>
+		<p class="third">
+			<span>Web Design</span><br>
+			Web Design encompasses many different skills and disciplines in the production and 
+			maintenance of wesites. the different areas of web graphic design; interface design;
+			authoring, including standardised code and proprietary software; user experience
+			design; and search engine optimization. often many individuals will work in teams 
+			covering different aspects of the design process, although some designers will cover 
+			them all. [1] the term "web design" is normally used to describe the design process 
+			relating to the front-end (client side) design of a website including writing markup.
+			web design partially overlaps web engineering in the broader scope of web devlopment.
+			Web designers are expected to have an awareness of usabillity and if their role involves
+			creating markup then they are also expected to be up to date with web accessibility 
+			guidelines.
+		</p>
+		<p class="read"><a href="https://www.w3schools.com/css/" target="_blank">Read More.....</a></p>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
