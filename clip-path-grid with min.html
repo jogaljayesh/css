@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>grid with min</title>
+
+<style type="text/css">
+	
+main {
+	display: grid;
+	grid: auto / 1fr min(70ch, calc(100% - 64px)) 1fr;
+}
+/* tell all content to go in column 2 */
+main > * {
+	grid-column: 2;
+}
+
+header {
+	padding: 1.5em;
+	margin-block: 1em 1.5em;
+	background: #ff9e16;
+	clip-path: polygon(0% 0%, 100% 10%, 98% 90%, 2% 100%);
+}
+
+.note {
+	padding: 1.75em;
+	margin-block: 0 1.5em;
+	background: #ffeace;
+}
+.note-left {
+	/* break out of main  */
+	grid-column: 1 / span 2;
+	clip-path: polygon(2% 0%, 99% 5%, 100% 90%, 1% 100%);
+}
+.note-right {
+	/* break out of main  */
+	grid-column: 2 / span 2;
+	clip-path: polygon(0% 5%, 99% 0%, 97% 100%, 1% 95%);
+}
+
+/* display */
+*,
+* + * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	display: grid;
+	place-items: center;
+	font-family: system-ui, sans-serif;
+}
+
+/* typography */
+h1,
+h3 {
+	text-align: center;
+}
+h3 {
+	font-weight: 400;
+}
+p {
+	font-size: 2.65vmin;
+	line-height: 1.5;
+	margin-block: 0 1.5em;
+	padding-inline: 2em 2em;
+}
+.note p {
+	margin: 0;
+}
+code {
+	padding: 1vmin;
+	background: #ffe4ef;
+}
+
+	
+</style>
+
+</head>
+<body>
+
+<main>
+	<header>
+		<h1>Breaking out of the grid</h1>
+		<h3>(... well, sort of)</h3>
+	</header>
+	<p>Make the middle column a maximum of 70 characters width and a minimum (on small screens) of 100% minus 32px either side.<br>
+		<code>
+			main {
+			display: grid;
+			grid: auto / 1fr min(70ch, calc(100% - 64px)) 1fr;
+			}</code>
+	</p>
+
+	<p>Place all content in column 2<br>
+		<code>main > * {
+			grid-column: 2;
+			}
+		</code>
+	</p>
+	<div class="note note-left">
+		<p>Break out of the middle column<br>
+			<code>
+				.note-left {
+				grid-column: 1 / span 2;}
+
+			</code>
+		</p>
+	</div>
+	<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<div class="note note-right">
+		<p>Break out of the middle column<br>
+			<code>.note-right {grid-column: 2 / span 2;}</code>
+		</p>
+	</div>
+	<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+</main>
+
+</body>
+</html>
