@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>shape with css</title>
+
+<style type="text/css">
+	
+body {
+    color: #FFFFFB;
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section {
+    padding: 30vh 0;
+}
+
+.one-icon {
+    background: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.one {
+    background: #5B5F97;
+    position: relative;
+}
+
+.one::after,
+.one::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: #5B5F97;
+    bottom: -1rem;
+    z-index: 100;
+}
+
+.one::before {
+    right: 50%;
+    transform: skew(0, 30deg);
+}
+
+.one::after {
+    left: 50%;
+    transform: skew(0, -30deg);
+}
+
+.two {
+    background: #FF6B6C;
+    margin-bottom: -10vw;
+    position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+}
+
+.two-img {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.three {
+    background: #5B5F97;
+}
+
+.three-img {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+	
+</style>
+
+</head>
+<body>
+
+    <section class="one">
+        <h1>Section One</h1>
+        <div class="one-icon">:)</div>
+    </section>
+
+    <section class="two">
+        <h2>Section Two</h2>
+        <img src="https://i.postimg.cc/6p3yLCkq/img-01.png" width="300" class="two-img">
+    </section>
+
+    <section class="three">
+        <h2>Section Three</h2>
+        <img src="https://i.postimg.cc/6p3yLCkq/img-01.png" width="300" class="three-img">
+    </section>
+
+</body>
+</html>
