@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>icon change</title>
+
+<style type="text/css">
+	
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#button {
+  width: 200px;
+  height: 75px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  background-color: #14213d;
+}
+#button .text {
+  font-family: "Satoshi", sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+#button svg {
+  font-size: 20px;
+  fill: #ffffff;
+}
+.after,
+.before,
+.text {
+  transition: transform 300ms ease, opacity 200ms ease;
+}
+.text {
+  transform: translatex(-20px);
+}
+.before {
+  transform: translatex(-20px);
+  opacity: 0;
+}
+.after {
+  transform: translatex(-20px);
+}
+#button:hover {
+  .text {
+    transform: translatex(20px);
+  }
+  .after {
+    transform: translatex(20px);
+    opacity: 0;
+  }
+  .before {
+    transform: translatex(20px);
+    opacity: 1;
+  }
+}
+
+	
+</style>
+
+
+</head>
+<body>
+
+<button id="button">
+  <svg class="before" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+  </svg>
+  <span class='text'>Hover</span>
+  <svg class="after" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+  </svg></button>
+
+<!-- font family  -->
+
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,300,501,401,901,400,2&display=swap" rel="stylesheet">
+
+</body>
+</html>
