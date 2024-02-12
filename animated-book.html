@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animated-book</title>
+
+<style type="text/css">
+	
+@keyframes bibleAnimation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -741px 0;
+  }
+}
+
+.root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 39px;
+  height: 33px;
+  scale: 3;
+  background-image: url("https://www.typetheword.site/bible.svg");
+  background-repeat: no-repeat;
+  background-position: -741px 0;
+}
+
+.icon:hover {
+  animation: bibleAnimation 1s steps(19) forwards;
+}
+	
+</style>
+
+</head>
+<body>
+
+<div class="root">
+  <div class="icon" />
+</div>
+
+</body>
+</html>
